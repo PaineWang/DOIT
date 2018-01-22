@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Setting View Controller-->
+        <scene sceneID="dLg-mY-yhS">
+            <objects>
+                <viewController storyboardIdentifier="SettingID" id="n2O-j0-GbU" customClass="SettingViewController" customModule="DOIT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MX2-IR-inW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="k8f-3A-jUm">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NotOpenCell" id="jbP-ON-y6h" customClass="CustomStoryBoardCell" customModule="DOIT" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jbP-ON-y6h" id="ke8-SY-sWB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DQ1-be-6aG">
+                                                    <rect key="frame" x="306" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.92941176469999998" green="0.14117647059999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="switchUploadEvents_Action:" destination="n2O-j0-GbU" eventType="valueChanged" id="VwF-hm-SNW"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不公开事件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwo-SM-ybm">
+                                                    <rect key="frame" x="55" y="13.5" width="251" height="18"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Upload" translatesAutoresizingMaskIntoConstraints="NO" id="Mxw-qD-cpo">
+                                                    <rect key="frame" x="15" y="9.5" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="5Oj-c6-x7Q"/>
+                                                        <constraint firstAttribute="height" constant="25" id="VG3-7b-Xhi"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Mxw-qD-cpo" firstAttribute="centerY" secondItem="ke8-SY-sWB" secondAttribute="centerY" id="10w-XS-VS3"/>
+                                                <constraint firstItem="DQ1-be-6aG" firstAttribute="leading" secondItem="vwo-SM-ybm" secondAttribute="trailing" id="CVB-9K-jj9"/>
+                                                <constraint firstItem="Mxw-qD-cpo" firstAttribute="leading" secondItem="ke8-SY-sWB" secondAttribute="leading" constant="15" id="Ic6-0k-56I"/>
+                                                <constraint firstAttribute="trailing" secondItem="DQ1-be-6aG" secondAttribute="trailing" constant="20" id="L4U-gJ-8He"/>
+                                                <constraint firstItem="vwo-SM-ybm" firstAttribute="centerY" secondItem="ke8-SY-sWB" secondAttribute="centerY" id="WAQ-Ws-WNZ"/>
+                                                <constraint firstItem="vwo-SM-ybm" firstAttribute="leading" secondItem="Mxw-qD-cpo" secondAttribute="trailing" constant="15" id="aAg-3f-GrN"/>
+                                                <constraint firstItem="DQ1-be-6aG" firstAttribute="centerY" secondItem="ke8-SY-sWB" secondAttribute="centerY" id="uK4-aU-HpF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="n2O-j0-GbU" id="Mqi-Ot-Dlw"/>
+                                    <outlet property="delegate" destination="n2O-j0-GbU" id="YNC-29-RKz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rHo-K8-RO9" firstAttribute="bottom" secondItem="k8f-3A-jUm" secondAttribute="bottom" id="HAt-7I-Hmp"/>
+                            <constraint firstItem="k8f-3A-jUm" firstAttribute="leading" secondItem="rHo-K8-RO9" secondAttribute="leading" id="Rxo-09-RyZ"/>
+                            <constraint firstItem="rHo-K8-RO9" firstAttribute="trailing" secondItem="k8f-3A-jUm" secondAttribute="trailing" id="bgD-5f-YMh"/>
+                            <constraint firstItem="k8f-3A-jUm" firstAttribute="top" secondItem="rHo-K8-RO9" secondAttribute="top" id="cWm-Pb-JKc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rHo-K8-RO9"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sH0-tu-sNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77.599999999999994" y="76.911544227886068"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Upload" width="20" height="20"/>
+    </resources>
+</document>

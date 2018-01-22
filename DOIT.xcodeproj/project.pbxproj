@@ -7,21 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		214F39FB200B101D00C180A7 /* WPEventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F39F9200B101D00C180A7 /* WPEventsCell.swift */; };
+		214F39FC200B101D00C180A7 /* WPEventsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 214F39FA200B101D00C180A7 /* WPEventsCell.xib */; };
+		214F3A00200B67C200C180A7 /* WPPopWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F39FF200B67C200C180A7 /* WPPopWindow.swift */; };
+		214F51E82009AD6100694279 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 214F51E72009AD6100694279 /* View.xib */; };
+		214F51ED2009D8BD00694279 /* WPEventTabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F51EC2009D8BD00694279 /* WPEventTabelView.swift */; };
+		214F51F4200A007300694279 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F51F2200A007300694279 /* EventsViewController.swift */; };
+		214F51F7200A2F9A00694279 /* WPWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F51F6200A2F9A00694279 /* WPWarningView.swift */; };
 		21B85E512009000200F90945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B85E502009000200F90945 /* AppDelegate.swift */; };
-		21B85E532009000200F90945 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B85E522009000200F90945 /* ViewController.swift */; };
+		21B85E532009000200F90945 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B85E522009000200F90945 /* MainViewController.swift */; };
 		21B85E562009000200F90945 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B85E542009000200F90945 /* Main.storyboard */; };
 		21B85E582009000200F90945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B85E572009000200F90945 /* Assets.xcassets */; };
 		21B85E5B2009000200F90945 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B85E592009000200F90945 /* LaunchScreen.storyboard */; };
+		21B85E642009042000F90945 /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B85E632009042000F90945 /* EventsModel.swift */; };
+		21B85E672009096800F90945 /* WPCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B85E662009096800F90945 /* WPCollectionView.swift */; };
+		21C9A18A20090C5C00093EF5 /* WPCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21C9A18920090C5C00093EF5 /* WPCollectionViewCell.xib */; };
+		4EAD849A629C3EA952C7029C /* libPods-DOIT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D259EE70012E7CA21523E91E /* libPods-DOIT.a */; };
+		961527AF200DED7B00425A3A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961527AE200DED7B00425A3A /* SettingViewController.swift */; };
+		961527B3200DEDC400425A3A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961527B2200DEDC400425A3A /* Setting.storyboard */; };
+		961527B5200E005C00425A3A /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961527B4200E005C00425A3A /* User.storyboard */; };
+		961A3D72200C4ED7001E571F /* WPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A3D71200C4ED7001E571F /* WPRequest.swift */; };
+		961A3D78200C98C6001E571F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A3D77200C98C6001E571F /* Extension.swift */; };
+		966037C3200D942A00441C29 /* WPTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966037C2200D942A00441C29 /* WPTabBarController.swift */; };
+		966037C5200D9EA300441C29 /* WPMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966037C4200D9EA300441C29 /* WPMoreViewController.swift */; };
+		966037C9200DA21000441C29 /* WPEventFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966037C8200DA21000441C29 /* WPEventFlowViewController.swift */; };
+		966037CE200DCAE200441C29 /* WPEventFlowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966037CC200DCAE200441C29 /* WPEventFlowCell.swift */; };
+		966037CF200DCAE200441C29 /* WPEventFlowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 966037CD200DCAE200441C29 /* WPEventFlowCell.xib */; };
+		966037D5200DDC9500441C29 /* userIMG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 966037D4200DDC9500441C29 /* userIMG.jpg */; };
+		966037D7200DDF4900441C29 /* userIMG.png in Resources */ = {isa = PBXBuildFile; fileRef = 966037D6200DDF4800441C29 /* userIMG.png */; };
+		966037DD200DE33400441C29 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966037DB200DE33400441C29 /* UserViewController.swift */; };
+		96709F45200F325A002F80D4 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96709F44200F325A002F80D4 /* Events.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		214F39F9200B101D00C180A7 /* WPEventsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPEventsCell.swift; sourceTree = "<group>"; };
+		214F39FA200B101D00C180A7 /* WPEventsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WPEventsCell.xib; sourceTree = "<group>"; };
+		214F39FF200B67C200C180A7 /* WPPopWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPPopWindow.swift; sourceTree = "<group>"; };
+		214F51E72009AD6100694279 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		214F51EC2009D8BD00694279 /* WPEventTabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPEventTabelView.swift; sourceTree = "<group>"; };
+		214F51F2200A007300694279 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		214F51F6200A2F9A00694279 /* WPWarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPWarningView.swift; sourceTree = "<group>"; };
 		21B85E4D2009000100F90945 /* DOIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DOIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B85E502009000200F90945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21B85E522009000200F90945 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21B85E522009000200F90945 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		21B85E552009000200F90945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21B85E572009000200F90945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21B85E5A2009000200F90945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21B85E5C2009000200F90945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B85E632009042000F90945 /* EventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModel.swift; sourceTree = "<group>"; };
+		21B85E662009096800F90945 /* WPCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPCollectionView.swift; sourceTree = "<group>"; };
+		21C9A18920090C5C00093EF5 /* WPCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WPCollectionViewCell.xib; sourceTree = "<group>"; };
+		374073D4223A234FF6177D85 /* Pods-DOIT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOIT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DOIT/Pods-DOIT.debug.xcconfig"; sourceTree = "<group>"; };
+		68406F297588AB14A4B6558A /* Pods-DOIT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOIT.release.xcconfig"; path = "Pods/Target Support Files/Pods-DOIT/Pods-DOIT.release.xcconfig"; sourceTree = "<group>"; };
+		961527AE200DED7B00425A3A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		961527B2200DEDC400425A3A /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		961527B4200E005C00425A3A /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		961A3D71200C4ED7001E571F /* WPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPRequest.swift; sourceTree = "<group>"; };
+		961A3D77200C98C6001E571F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		966037C2200D942A00441C29 /* WPTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPTabBarController.swift; sourceTree = "<group>"; };
+		966037C4200D9EA300441C29 /* WPMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPMoreViewController.swift; sourceTree = "<group>"; };
+		966037C8200DA21000441C29 /* WPEventFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPEventFlowViewController.swift; sourceTree = "<group>"; };
+		966037CC200DCAE200441C29 /* WPEventFlowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPEventFlowCell.swift; sourceTree = "<group>"; };
+		966037CD200DCAE200441C29 /* WPEventFlowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WPEventFlowCell.xib; sourceTree = "<group>"; };
+		966037D4200DDC9500441C29 /* userIMG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = userIMG.jpg; sourceTree = "<group>"; };
+		966037D6200DDF4800441C29 /* userIMG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userIMG.png; sourceTree = "<group>"; };
+		966037DB200DE33400441C29 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		96709F44200F325A002F80D4 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		968BE52D20106EF500A8F475 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		968BE52E20106F1600A8F475 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D259EE70012E7CA21523E91E /* libPods-DOIT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DOIT.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +83,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EAD849A629C3EA952C7029C /* libPods-DOIT.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		195FA18D7A609FD0C76B874F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				374073D4223A234FF6177D85 /* Pods-DOIT.debug.xcconfig */,
+				68406F297588AB14A4B6558A /* Pods-DOIT.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		214F51E92009AD8B00694279 /* NIB */ = {
+			isa = PBXGroup;
+			children = (
+				966037D4200DDC9500441C29 /* userIMG.jpg */,
+				966037D6200DDF4800441C29 /* userIMG.png */,
+				21B85E542009000200F90945 /* Main.storyboard */,
+				961527B2200DEDC400425A3A /* Setting.storyboard */,
+				961527B4200E005C00425A3A /* User.storyboard */,
+				96709F44200F325A002F80D4 /* Events.storyboard */,
+				21B85E592009000200F90945 /* LaunchScreen.storyboard */,
+				214F51E72009AD6100694279 /* View.xib */,
+				21C9A18920090C5C00093EF5 /* WPCollectionViewCell.xib */,
+				214F39FA200B101D00C180A7 /* WPEventsCell.xib */,
+				966037CD200DCAE200441C29 /* WPEventFlowCell.xib */,
+			);
+			path = NIB;
+			sourceTree = "<group>";
+		};
 		21B85E442009000100F90945 = {
 			isa = PBXGroup;
 			children = (
 				21B85E4F2009000100F90945 /* DOIT */,
 				21B85E4E2009000100F90945 /* Products */,
+				195FA18D7A609FD0C76B874F /* Pods */,
+				B14F28001756CD8176EFA2CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +138,118 @@
 		21B85E4F2009000100F90945 /* DOIT */ = {
 			isa = PBXGroup;
 			children = (
-				21B85E502009000200F90945 /* AppDelegate.swift */,
-				21B85E522009000200F90945 /* ViewController.swift */,
-				21B85E542009000200F90945 /* Main.storyboard */,
+				961A3D6E200C49A8001E571F /* Main */,
+				966037D9200DE2F800441C29 /* EventsFlow */,
+				966037D8200DE2E700441C29 /* More */,
+				961A3D70200C4E0A001E571F /* NetWork */,
+				961A3D6F200C49C0001E571F /* Public */,
+				961A3D6D200C4938001E571F /* EventsHandle */,
+				214F51E92009AD8B00694279 /* NIB */,
+				21B85E652009093A00F90945 /* View */,
+				21B85E62200903EA00F90945 /* Model */,
 				21B85E572009000200F90945 /* Assets.xcassets */,
-				21B85E592009000200F90945 /* LaunchScreen.storyboard */,
 				21B85E5C2009000200F90945 /* Info.plist */,
 			);
 			path = DOIT;
+			sourceTree = "<group>";
+		};
+		21B85E62200903EA00F90945 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21B85E632009042000F90945 /* EventsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		21B85E652009093A00F90945 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				214F39FF200B67C200C180A7 /* WPPopWindow.swift */,
+				21B85E662009096800F90945 /* WPCollectionView.swift */,
+				214F51F6200A2F9A00694279 /* WPWarningView.swift */,
+				214F51EC2009D8BD00694279 /* WPEventTabelView.swift */,
+				214F39F9200B101D00C180A7 /* WPEventsCell.swift */,
+				966037CC200DCAE200441C29 /* WPEventFlowCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		961527AD200DECE700425A3A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				961527AE200DED7B00425A3A /* SettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		961A3D6D200C4938001E571F /* EventsHandle */ = {
+			isa = PBXGroup;
+			children = (
+				214F51F2200A007300694279 /* EventsViewController.swift */,
+			);
+			path = EventsHandle;
+			sourceTree = "<group>";
+		};
+		961A3D6E200C49A8001E571F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				21B85E522009000200F90945 /* MainViewController.swift */,
+				966037C2200D942A00441C29 /* WPTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		961A3D6F200C49C0001E571F /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				21B85E502009000200F90945 /* AppDelegate.swift */,
+				961A3D77200C98C6001E571F /* Extension.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		961A3D70200C4E0A001E571F /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				961A3D71200C4ED7001E571F /* WPRequest.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		966037D8200DE2E700441C29 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				961527AD200DECE700425A3A /* Setting */,
+				966037DA200DE31700441C29 /* User */,
+				966037C4200D9EA300441C29 /* WPMoreViewController.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		966037D9200DE2F800441C29 /* EventsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				966037C8200DA21000441C29 /* WPEventFlowViewController.swift */,
+			);
+			path = EventsFlow;
+			sourceTree = "<group>";
+		};
+		966037DA200DE31700441C29 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				966037DB200DE33400441C29 /* UserViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		B14F28001756CD8176EFA2CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				968BE52E20106F1600A8F475 /* MapKit.framework */,
+				968BE52D20106EF500A8F475 /* CoreLocation.framework */,
+				D259EE70012E7CA21523E91E /* libPods-DOIT.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +259,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21B85E5F2009000200F90945 /* Build configuration list for PBXNativeTarget "DOIT" */;
 			buildPhases = (
+				2A6B49B581203E693EFF0463 /* [CP] Check Pods Manifest.lock */,
 				21B85E492009000100F90945 /* Sources */,
 				21B85E4A2009000100F90945 /* Frameworks */,
 				21B85E4B2009000100F90945 /* Resources */,
+				74D52CEB619EDAE936B43283 /* [CP] Embed Pods Frameworks */,
+				EF4FC848889E30741C876D5F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,20 +315,98 @@
 			buildActionMask = 2147483647;
 			files = (
 				21B85E5B2009000200F90945 /* LaunchScreen.storyboard in Resources */,
+				966037CF200DCAE200441C29 /* WPEventFlowCell.xib in Resources */,
 				21B85E582009000200F90945 /* Assets.xcassets in Resources */,
+				214F51E82009AD6100694279 /* View.xib in Resources */,
 				21B85E562009000200F90945 /* Main.storyboard in Resources */,
+				214F39FC200B101D00C180A7 /* WPEventsCell.xib in Resources */,
+				966037D7200DDF4900441C29 /* userIMG.png in Resources */,
+				966037D5200DDC9500441C29 /* userIMG.jpg in Resources */,
+				96709F45200F325A002F80D4 /* Events.storyboard in Resources */,
+				21C9A18A20090C5C00093EF5 /* WPCollectionViewCell.xib in Resources */,
+				961527B5200E005C00425A3A /* User.storyboard in Resources */,
+				961527B3200DEDC400425A3A /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A6B49B581203E693EFF0463 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DOIT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74D52CEB619EDAE936B43283 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DOIT/Pods-DOIT-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DOIT/Pods-DOIT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF4FC848889E30741C876D5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DOIT/Pods-DOIT-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		21B85E492009000100F90945 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21B85E532009000200F90945 /* ViewController.swift in Sources */,
+				966037C9200DA21000441C29 /* WPEventFlowViewController.swift in Sources */,
+				961A3D78200C98C6001E571F /* Extension.swift in Sources */,
+				214F39FB200B101D00C180A7 /* WPEventsCell.swift in Sources */,
+				966037CE200DCAE200441C29 /* WPEventFlowCell.swift in Sources */,
+				21B85E532009000200F90945 /* MainViewController.swift in Sources */,
+				961527AF200DED7B00425A3A /* SettingViewController.swift in Sources */,
+				966037DD200DE33400441C29 /* UserViewController.swift in Sources */,
+				214F51ED2009D8BD00694279 /* WPEventTabelView.swift in Sources */,
+				21B85E642009042000F90945 /* EventsModel.swift in Sources */,
+				966037C5200D9EA300441C29 /* WPMoreViewController.swift in Sources */,
 				21B85E512009000200F90945 /* AppDelegate.swift in Sources */,
+				214F51F7200A2F9A00694279 /* WPWarningView.swift in Sources */,
+				961A3D72200C4ED7001E571F /* WPRequest.swift in Sources */,
+				214F3A00200B67C200C180A7 /* WPPopWindow.swift in Sources */,
+				966037C3200D942A00441C29 /* WPTabBarController.swift in Sources */,
+				214F51F4200A007300694279 /* EventsViewController.swift in Sources */,
+				21B85E672009096800F90945 /* WPCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,31 +541,35 @@
 		};
 		21B85E602009000200F90945 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 374073D4223A234FF6177D85 /* Pods-DOIT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UKZKSE76A2;
+				DEVELOPMENT_TEAM = FZ6V5WR6RE;
 				INFOPLIST_FILE = DOIT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pow.Wang.com.DOIT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		21B85E612009000200F90945 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68406F297588AB14A4B6558A /* Pods-DOIT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UKZKSE76A2;
+				DEVELOPMENT_TEAM = FZ6V5WR6RE;
 				INFOPLIST_FILE = DOIT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pow.Wang.com.DOIT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

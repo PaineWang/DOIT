@@ -16,6 +16,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        if (UserDefaults.standard.value(forKey:UserDefaults_KEY.UserID.rawValue) == nil) {
+        
+            WPRequest.shared.get(requestInterface:.SetNewUser, data:EventsModel()) { (value:Array) in
+                let values:Array = value
+                if values.count == 0 {
+                    return
+                }
+                let dict:[String:Any] = values[0] as! [String : Any]
+                UserDefaults.standard.set(dict["userID"], forKey:UserDefaults_KEY.UserID.rawValue)
+                UserDefaults.standard.set(dict["userName"], forKey:UserDefaults_KEY.UserName.rawValue)
+                UserDefaults.standard.set(dict["userDeviceID"], forKey:UserDefaults_KEY.DeviceID.rawValue)
+                UserDefaults.standard.set(dict["closeFlow"], forKey:UserDefaults_KEY.closeFlow.rawValue)
+                UserDefaults.standard.set(dict["isOpen"], forKey:UserDefaults_KEY.isOpen.rawValue)
+            }
+        }
         return true
     }
 
